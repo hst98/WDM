@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Candidate Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/aa7aa06f5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item p-2">
+                        <p class="company-title">URM website</p>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="academia_dashboard.html" class="nav-item-links href">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-item-links href" href="#" class="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container pt-6">
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-12 col-md-8 col-lg-8">
+                <div class="p-1">
+                    <div class="academia-candidate-profile">
+                        <h2>Edit Candidate Profile</h2>
+                        <form action="/" method="post">
+                            <label for="name">Candidate Name</label>
+                            <input type="text" class="ip" name="name" placeholder="Enter Candidate Name" value="John Doe"><br><br>
+                            <label for="education">Education Level</label>
+                            <input type="text" class="ip" name="education" placeholder="Enter Candidate Education" value="Masters in Computer Science"><br><br>
+                            <label for="education">Research Experience</label>
+                            <input type="text" class="ip" name="education" placeholder="Enter Candidate Education" value="Doctoral Researcher"><br><br>
+                            <label for="resume">Resume</label><input type="file" class="ip" name="resume" id="">
+                            <input type="text" class="ip" placeholder="Enter Research Experience"><br><br>
+                            <label for="job_location">Location Preference</label>
+                            <select id="" class="ip" name="job_location">
+                                <option value="Arlington">Arlington</option>
+                                <option value="Dallas">Dallas</option>
+                                <option value="Austin">Austin</option>
+                            </select> <br><br><br>
+                            <label for="job_type">Job Type Preferenece</label>
+                            <select id="" class="ip" name="job_type">
+                                <option value="PhD">PhD</option>
+                                <option value="postdoc">postdoc</option>
+                                <option value="faculty">faculty</option>
+                            </select> <br><br><br>
+                            <input type="submit" class="ip-button" value="Save Changes">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-sm-12 col-md-4 col-lg-4">
+                <div class="p-1">
+                    <div class="academia-jobs">
+                        <h2>Quicklinks</h2>
+                        <ul class="">
+                            <li><a href="academia_dashboard.html" class="href">Dashboard</a></li>
+                            <li><a href="academia_jobs.html" class="href">Job Listings</a></li>
+                            <li><a href="academia_candidates.html" class="href">Candidate Profiles</a></li>
+                            <li><a href="admin/chat.html" class="href">Chats</a></li>
+                            <li><a href="academia_application.html" class="href">View Applications</a></li>
+                            <li><a href="academia_create_job.html" class="href">Create Job</a></li>
+                            <li><a href="academia_about.html" class="href">About</a></li>
+                            <li><a href="#" class="href">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="pt-6">
+        <div class="ft-container text-center">
+            <div class="row">
+                <div class="col-4 col-lg-4 col-md-4 col-sm-4" >
+                    <ul class="nav-list">
+                        <li><h2>Website Links</h2></li>
+                        <li><a href="index.html" class="href">Home</a></li>
+                        <li class="pt-1"><a href="admin/About.html" class="href">About</a></li>
+                        <li class="pt-1"><a href="services.html" class="href">Services</a></li>
+                        <li class="pt-1"><a href="contact_us.html" class="href">Contact Us</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                    <ul class="nav-list">
+                        <li><h2>Other Profiles</h2></li>
+                        <li><a href="candidate_dashboard.html" class="href">URM Candidate</a></li>
+                        <li class="pt-1"><a href="dei_dashboard.html" class="href">DEI</a></li>
+                        <li class="pt-1"><a href="academia_dashboard.html" class="href">Academia</a></li>
+                        <li class="pt-1"><a href="admin/admin.html" class="href">Admin</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                    <ul class="nav-list">
+                        <li><h2>Social</h2></li>
+                        <li>Facebook</li>
+                        <li class="pt-1">Instagram</li>
+                        <li class="pt-1">Twitter</li>
+                        <li class="pt-1">Threads</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
