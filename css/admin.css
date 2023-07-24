@@ -1,0 +1,671 @@
+/*  NAME: THOMBRE, HARSHADA
+    STUDENT ID: 1002118901
+*/
+
+/* -----------------------------BODY---------------------------- */
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eeeeee;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  font-family: sans-serif;
+}
+/* ---------------------------NAVBAR--------------------------- */
+.navbar {
+  background-color: #333; /*DARK CHARCOAL*/
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff; /*WHITE*/
+  text-decoration: none;
+}
+a:hover {
+  background-color: #555; /*DAVY'S GRAY*/
+}
+.company-name {
+  float: right;
+  padding-top: 10px;
+  padding-right: 50px;
+  color: #fff; /*WHITE*/
+  font-size: 20px;
+}
+/* ---------------------------------CONTAINER---------------------- */
+.container {
+  height: 100%;
+  text-align: center;
+}
+/* --------------------------------PAGE NAME-------------------------- */
+.page-name {
+  text-align: center;
+}
+/* ---------------------------------FOOTER----------------------------- */
+/* FOOTER */
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+.company-name-footer {
+  font-size: 18px;
+  color: #f2f2f2;
+  margin-top: 0.3px;
+  text-align: center;
+}
+.fa {
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  color: #f2f2f2;
+  margin-top: 0.5px;
+}
+/* -------------------------RESPONSIVENESS----------------- */
+@media screen and (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }
+  .company-name {
+    float: none;
+    text-align: center;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+  .container-admin {
+    flex-direction: column;
+  }
+
+  .right-admin-card {
+    max-width: 100%;
+  }
+  .footer-monitor {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-home {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .card-about {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+  .company-name-footer {
+    padding-top: 10px;
+  }
+
+  .line-hr-home {
+    width: 50%;
+  }
+  .split-screen {
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  li {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  .company-name {
+    display: block;
+    float: none;
+    padding: 10px;
+  }
+  .sender,
+  .receiver {
+    margin-left: 0;
+    width: 100%;
+  }
+  .input-msg-chat,
+  .btn {
+    margin-left: 0;
+    width: 100%;
+  }
+  /* CARD */
+  .card {
+    max-width: 450px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    border: 1px solid #636e72;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  }
+  /* FORM */
+  .card-form {
+    padding: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-menu {
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="message"],
+  textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #65647c;
+  }
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid #636e72;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  }
+  .contact-form {
+    font-size: 14px;
+  }
+  .search-bar {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  table {
+    font-size: 12px;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+  .contact-form {
+    font-size: 12px;
+  }
+}
+
+/* ------------------------TABLE------------------- */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid black;
+  align-content: center;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+.heading-table {
+  color: black;
+  background-color: #c4dfdf;
+}
+.data-table {
+  color: black;
+  background-color: #e3f4f4;
+}
+/* ---------------------------HOME--------------------- */
+/* CARD */
+.card-home {
+  max-width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border: 1px solid #636e72;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+.submit-button-home {
+  /* margin:0 auto; */
+  margin-bottom: 20px;
+}
+.submit-home {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submit-home:hover {
+  background-color: #65647c;
+}
+.join-button {
+  display: inline;
+  text-align: center;
+  width: 20px;
+}
+.line-hr-home {
+  width: 30%;
+  color: black;
+}
+/* -----------------------------ABOUT-------------------------------- */
+/* CARD */
+.card-about {
+  align-items: center;
+  justify-content: center;
+  max-width: 750px;
+  margin: auto;
+  background-color: #ecf0f1;
+  border: 1px solid #636e72;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  padding: 20px;
+}
+/* ----------------------------------ADMIN---------------------------------- */
+.footer-admin {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  /* position: fixed; */
+}
+.container-admin {
+  display: flex;
+  height: 100%;
+}
+/* -----------DROPDOWN ON ADMIN BUTTON IN NAVBAR------------- */
+.admin-login {
+  text-decoration: none;
+}
+.admin-login:hover {
+  cursor: pointer;
+}
+/* ------------------------------DROPDOWN ON BUTTON------------------- */
+.dropdown-admin {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-admin-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-admin-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-admin:hover .dropdown-admin-content {
+  display: block;
+}
+/* ------------------------------SCREEN SPLIT----------------------- */
+.container-admin {
+  display: flex;
+  height: 100%;
+}
+.left-admin {
+  background-color: #f0f0f0;
+  flex: 1;
+}
+.right-admin {
+  background-color: #f5f5f5;
+  flex: 1;
+}
+.heading {
+  text-align: center;
+}
+
+/* -----------------------------CARD------------------------- */
+.left-admin-card {
+  width: 300px;
+  height: 80px;
+  background-color: #e4d0d0;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.left-admin-card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-menu-admin {
+  text-decoration: none;
+  color: black;
+}
+.card-menu-admin:hover {
+  background-color: #867070;
+}
+.right-admin-card {
+  max-width: 400px;
+  margin: 30px auto;
+  background-color: #e4d0d0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-right-admin:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/* ------------------------------KPI------------------- */
+.kpi {
+  width: 100%;
+}
+.kpi-info,
+.card-2-kpi,
+.card-3-kpi {
+  text-align: center;
+}
+/*------------------------------ APPROVE/REJECT------------------- */
+/* CONTAINER */
+.container-approve {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+}
+/* ----------------------------TABLE------------------------ */
+
+/* -----------------------------------------CHAT------------------------------ */
+/* CHAT FOOTER */
+.footer-chat {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* ---------CHAT CONTAINER------------ */
+.container-chat {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+}
+.child-container {
+  /* max-width: 650px; */
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* -----------------------CHAT-SEND-RECEIVE------------------ */
+.sender {
+  /* margin-left: 200px; */
+  background-color: #ccc;
+  height: 80px;
+  text-align: left;
+}
+.receiver {
+  background-color: #ddd;
+  height: 80px;
+  text-align: right;
+}
+.time-left {
+  float: left;
+  color: #999;
+  padding-bottom: 0;
+}
+.time-right {
+  float: right;
+  color: #aaa;
+  padding-bottom: 0;
+}
+.chat-dashboard {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.input-msg-chat {
+  height: 80px;
+  width: 75%;
+}
+.button-submit {
+  justify-content: center;
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-submit:hover {
+  background-color: #65647c;
+}
+/* ------------------CONTACT US---------------------- */
+/* FOOTER */
+.footer-contact {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* CARD */
+.card-contact {
+  max-width: 450px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  border: 1px solid #636e72;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+/* FORM */
+.card-form-contact {
+  padding: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-menu-contact {
+  margin-bottom: 20px;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="message"],
+input[type="date"],
+textarea {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #65647c;
+}
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border: 1px solid #636e72;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+/* -------------------------------CREATE USER ENTRY------------------------- */
+/* FOOTER */
+.footer-create {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+/* CARD */
+.card-create {
+  max-width: 450px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  border: 1px solid #636e72;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+
+.card-form-create {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-menu-create {
+  margin-bottom: 20px;
+}
+/* ----------------------------DELETE USE ENTRY----------------------------- */
+.fa-trash-o {
+  color: black;
+}
+.container-delete {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+}
+/* --------------------------------MONITOR USER ACTIVITY------------------------------ */
+.footer-monitor {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+.container-monitor {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+  align-items: center;
+}
+.heading-monitor {
+  color: black;
+  background-color: lightslategray;
+}
+.data-monitor {
+  color: black;
+  background-color: aliceblue;
+}
+
+.card-monitor {
+  max-width: 850px;
+  margin: 20px auto;
+}
+/* ---------------TROUBLESHOOT--------------- */
+.troubleshoot-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.container-troubleshoot {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+}
+.issues {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  border: 1px solid #636e72;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  list-style-type: circle;
+}
+
+/* -------------------UPDATE ENTRY---------------- */
+/* SEARCH BAR */
+.SearchRecords {
+  text-align: center;
+  width: 400px;
+  align-items: center;
+  margin: 50px auto;
+}
+.search-bar {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  padding: 10px;
+}
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+.search-update {
+  text-align: center;
+}
+.fa-edit {
+  color: black;
+}
+/* CARD */
+.card-update {
+  text-align: center;
+  width: 450px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  border: 1px solid #636e72;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+
+.card-form-update {
+  padding: 20px;
+}
